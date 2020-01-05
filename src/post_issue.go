@@ -1,13 +1,26 @@
 package main
 
 import (
+	"bytes"
 	"fmt"
 	"net/http"
 	"net/http/httputil"
 )
 
-func getIssue() {
-	req, _ := http.NewRequest( "GET", get_base_url(), nil )
+
+func testData() string {
+	return `{
+	"title": "Goから来ました",
+	"body": "Goから来ました。\nテストです。"
+}`
+}
+
+func postIssue() {
+	req, _ := http.NewRequest(
+		"POST",
+		"https://api.github.com/repos/yumechi/til/issues",
+		bytes.NewBuffer([]byte(testData())),
+	)
 
 	// Content-Type 設定
 	req.Header.Set("Content-Type", "application/json")
@@ -24,5 +37,5 @@ func getIssue() {
 }
 
 func main() {
-	getIssue()
+	postIssue()
 }
