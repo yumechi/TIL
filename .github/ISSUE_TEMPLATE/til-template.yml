@@ -1,0 +1,23 @@
+name: TIL Template
+about: TIL Template
+title: ''
+labels: ["engineering"]
+assignees: 
+  - yumechi
+body:
+  - type: input
+    id: url_string
+    attributes:
+      label: URL
+      description: input URL
+      placeholder: https://namonakimichi.hatenablog.com/
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: 所感
+      description: input Details
+      placeholder: この記事に書かれていたこと
+    validations:
+      required: true
