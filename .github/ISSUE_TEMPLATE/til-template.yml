@@ -6,18 +6,18 @@ assignees:
   - yumechi
 body:
   - type: input
-    id: url_string
+    id: url-string
     attributes:
-      label: URL
-      description: input URL
-      placeholder: https://namonakimichi.hatenablog.com/
+      label: "URL"
+      description: "input URL"
+      placeholder: "https://namonakimichi.hatenablog.com/"
     validations:
       required: true
   - type: textarea
     id: details
     attributes:
-      label: 所感
-      description: input Details
-      placeholder: この記事に書かれていたこと
+      label: "所感"
+      description: "input Details"
+      placeholder: "この記事に書かれていたこと"
     validations:
       required: true
