@@ -1,0 +1,14 @@
+name: Gather tool Template
+description: Gather tool Template
+title: "[Tools]: "
+labels: ["gather_tool"]
+assignees: 
+  - yumechi
+body:
+  - type: textarea
+    id: details
+    attributes:
+      label: "アイディア"
+      description: "考えていること思っていることをかく"
+    validations:
+      required: false
