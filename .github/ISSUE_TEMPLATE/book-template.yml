@@ -1,0 +1,21 @@
+name: Book Template
+description: Book Template
+title: "[Book]: "
+labels: ["engineering"]
+assignees: 
+  - yumechi
+body:
+  - type: input
+    id: book-title
+    attributes:
+      label: "本の名前"
+      description: "本の名前を入れてください"
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: "所感"
+      description: "所感を書いてください"
+    validations:
+      required: true
